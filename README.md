@@ -1,4 +1,4 @@
-# 프라이버시 보존형 아동 낙상 위험도 판별
+# Child Fall Risk Classification
 
 **Privacy-preserving child fall risk classification (pose only)**
 
@@ -73,4 +73,4 @@ docs/        labeling_guide.md recording_protocol.md
 
 - **Never film real children.** All team recordings are adult team members acting on safety mats.
 - `extract_pose.py` and `demo.py` never write camera frames. The only exception is `--rgb-out`, which is used solely for the comparison experiment on adult footage.
-- Personal Information Protection Act (개인정보 보호법) Art. 22-2: processing data of children under 14 requires the legal guardian's consent. This is why a real deployment would need a legal review, and why this project does not collect child data.
+- Korea's Personal Information Protection Act, Art. 22-2: processing data of children under 14 requires the legal guardian's consent. This is why a real deployment would need a legal review, and why this project does not collect child data.

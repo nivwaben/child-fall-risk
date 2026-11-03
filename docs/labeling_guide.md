@@ -1,14 +1,14 @@
-# 라벨링 가이드 (Labeling guide)
+# Labeling guide
 
 Every clip gets **one** label. Two people label each clip independently, and we report Cohen's κ (`sklearn.metrics.cohen_kappa_score`). If κ < 0.6, the definitions below are not clear enough: discuss them, revise them, and relabel.
 
 ## Classes
 
-| 라벨 | 조건 (ALL must hold) |
+| Label | Conditions (all must hold) |
 |---|---|
-| `normal` 정상 동작 | 엉덩이(hip)가 바닥 근처로 **빠르게** 내려가지 않음. 의도적으로 천천히 앉기·눕기·구르기·쪼그리기는 normal |
-| `light_fall` 가벼운 낙상 | 의도치 않게 빠르게 넘어짐 **AND** 넘어진 뒤 3초 이내에 스스로 움직여 일어나거나 앉음 **AND** 머리부터 떨어지지 않음 |
-| `dangerous_fall` 위험 낙상 | 의도치 않게 넘어짐 **AND** (넘어진 뒤 **3초 이상** 거의 움직임 없음 **OR** 머리·목이 먼저 바닥에 닿음 **OR** 높은 곳(≥ 무릎 높이)에서 떨어짐) |
+| `normal` | The hips do not drop **quickly** to near the floor. Deliberately sitting, lying down, rolling or squatting slowly counts as normal |
+| `light_fall` | Falls quickly and unintentionally **AND** moves on their own to get up or sit up within 3 s **AND** does not land head-first |
+| `dangerous_fall` | Falls unintentionally **AND** (almost no movement for **3 s or more** afterwards **OR** head or neck hits the floor first **OR** falls from a raised surface, at least knee height) |
 
 ## Decision order
 

@@ -1,4 +1,4 @@
-# 촬영 프로토콜 (Recording protocol for team-acted data)
+# Recording protocol for team-acted data
 
 ## Safety first
 
