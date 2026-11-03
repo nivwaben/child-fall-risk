@@ -1,0 +1,9 @@
+torch>=2.2
+torchvision>=0.17
+numpy
+scikit-learn
+pandas
+ultralytics>=8.3
+lap
+opencv-python-headless
+pycocotools
