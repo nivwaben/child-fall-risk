@@ -10,7 +10,7 @@ Video → pose keypoints (raw frames discarded) → temporal model → one of th
 | 1 | `light_fall` | falls during play and gets up within a few seconds |
 | 2 | `dangerous_fall` | falls and does not move afterwards, or lands head-first |
 
-The labelling rules are in [docs/labeling_guide.md](docs/labeling_guide.md).
+The labelling rules are in [docs/labeling_guide.md](docs/labeling_guide.md). The reading list is in [docs/papers.md](docs/papers.md).
 
 ## Setup (Colab or local)
 
@@ -66,7 +66,7 @@ Run every trained model with three seeds (`--seed 0 1 2`) and report the mean ±
 childfall/   skeleton.py preprocess.py augment.py rules.py models.py data.py metrics.py
 scripts/     extract_pose.py make_synthetic.py train.py evaluate.py evaluate_stream.py
              train_rgb.py pose_gap_coco.py demo.py
-docs/        labeling_guide.md recording_protocol.md
+docs/        labeling_guide.md recording_protocol.md papers.md
 ```
 
 ## Privacy rules for this project
